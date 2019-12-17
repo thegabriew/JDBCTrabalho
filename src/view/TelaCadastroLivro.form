@@ -43,19 +43,19 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="nomeLivro4" min="-2" pref="218" max="-2" attributes="0"/>
+                      <Component id="Preco" min="-2" pref="218" max="-2" attributes="0"/>
                       <Component id="textoNome5" min="-2" max="-2" attributes="0"/>
-                      <Component id="nomeLivro5" min="-2" pref="218" max="-2" attributes="0"/>
+                      <Component id="Paginas" min="-2" pref="218" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="nomeLivro" alignment="0" min="-2" pref="218" max="-2" attributes="0"/>
                               <Component id="textoNome1" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="nomeLivro1" alignment="0" min="-2" pref="218" max="-2" attributes="0"/>
+                              <Component id="ISBN" alignment="0" min="-2" pref="218" max="-2" attributes="0"/>
                               <Component id="textoNome" min="-2" max="-2" attributes="0"/>
                               <Component id="textoNome2" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="nomeLivro3" alignment="0" min="-2" pref="218" max="-2" attributes="0"/>
+                              <Component id="Categoria" alignment="0" min="-2" pref="218" max="-2" attributes="0"/>
                               <Component id="textoNome3" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="nomeLivro2" alignment="0" min="-2" pref="218" max="-2" attributes="0"/>
+                              <Component id="Autor" alignment="0" min="-2" pref="218" max="-2" attributes="0"/>
                               <Component id="textoNome4" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
@@ -98,25 +98,25 @@
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="textoNome1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="nomeLivro1" min="-2" max="-2" attributes="0"/>
+                          <Component id="ISBN" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="textoNome2" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="nomeLivro2" min="-2" max="-2" attributes="0"/>
+                          <Component id="Autor" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="textoNome3" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="nomeLivro3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Categoria" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="textoNome4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="nomeLivro4" min="-2" max="-2" attributes="0"/>
+                  <Component id="Preco" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="textoNome5" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="nomeLivro5" min="-2" max="-2" attributes="0"/>
+                  <Component id="Paginas" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="34" max="32767" attributes="0"/>
                   <Component id="jScrollPane1" min="-2" pref="139" max="-2" attributes="0"/>
               </Group>
@@ -151,9 +151,9 @@
             <Property name="text" type="java.lang.String" value="ISBN"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="nomeLivro1">
+        <Component class="javax.swing.JTextField" name="ISBN">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nomeLivro1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ISBNActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="textoNome2">
@@ -167,9 +167,9 @@
             <Property name="text" type="java.lang.String" value="Autor"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="nomeLivro2">
+        <Component class="javax.swing.JTextField" name="Autor">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nomeLivro2ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AutorActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="textoNome3">
@@ -183,9 +183,9 @@
             <Property name="text" type="java.lang.String" value="Categoria"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="nomeLivro3">
+        <Component class="javax.swing.JTextField" name="Categoria">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nomeLivro3ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CategoriaActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnNovo">
@@ -200,16 +200,25 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="SALVAR"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSalvarActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnExcluir">
           <Properties>
             <Property name="text" type="java.lang.String" value="DELETAR"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnExcluirActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnProcurar">
           <Properties>
             <Property name="text" type="java.lang.String" value="PROCURAR"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnProcurarActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="textoNome4">
           <Properties>
@@ -222,9 +231,9 @@
             <Property name="text" type="java.lang.String" value="Pre&#xe7;o"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="nomeLivro5">
+        <Component class="javax.swing.JTextField" name="Paginas">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nomeLivro5ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PaginasActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="textoNome5">
@@ -238,9 +247,9 @@
             <Property name="text" type="java.lang.String" value="Quantidade de p&#xe1;ginas"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="nomeLivro4">
+        <Component class="javax.swing.JTextField" name="Preco">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nomeLivro4ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PrecoActionPerformed"/>
           </Events>
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane1">
